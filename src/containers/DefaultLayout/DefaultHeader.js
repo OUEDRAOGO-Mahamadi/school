@@ -22,13 +22,14 @@ class DefaultHeader extends Component {
     return (
       <React.Fragment>
         <AppSidebarToggler className="d-lg-none" display="md" mobile  />
-        <AppSidebarToggler className="d-md-down-none" display="lg" />
+       
         <AppNavbarBrand
           full={{ src: logo, width: 89, height: 25, alt: 'Ecole Logo' }}
           minimized={{ src: sygnet, width: 30, height: 30, alt: 'Ecole Logo' }}
         />
-        
-        <Nav className="d-md-down" navbar>
+         <AppSidebarToggler className="d-md-down-none" display="lg" />
+
+        <Nav className="d-md-down-none" navbar>
           <NavItem className="px-3">
             <NavLink to="/dashboard" className="nav-link" >Dashboard</NavLink>
           </NavItem>
