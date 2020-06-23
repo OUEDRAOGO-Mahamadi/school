@@ -136,14 +136,14 @@ export default {
      
     },
     {
-      name: 'Dévoirs',
-      url: '/notifications',
+      name: 'Devoirs',
+      url: '/Ajouter Devoir/Liste Devoirs',
       icon: 'icon-bell',
      
     },
     {
       name: 'Examens',
-      url: '/notifications',
+      url: '/Ajouter Examen/Liste Examens',
       icon: 'icon-bell',
      
     },

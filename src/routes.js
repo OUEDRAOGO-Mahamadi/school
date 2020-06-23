@@ -52,6 +52,13 @@ const ListProf = React.lazy(() => import('./views/Professeur/ListProf'));
 const AjouterMatiere = React.lazy(() => import('./views/Matiere/AjouterMatiere'));
 const ListeMatiere = React.lazy(() => import('./views/Matiere/ListeMatiere'));
 
+const AjouterDevoir = React.lazy(() => import('./views/Devoirs/AjouterDevoir'));
+const ListeDevoirs = React.lazy(() => import('./views/Devoirs/ListeDevoirs'));
+
+const AjouterExamen = React.lazy(() => import('./views/Examens/AjouterExamen'));
+const ListeExamens = React.lazy(() => import('./views/Examens/ListeExamens'));
+
+
 // https://github.com/ReactTraining/react-router/tree/master/packages/react-router-config
 const routes = [
   { path: '/', exact: true, name: 'Home' },
@@ -117,7 +124,11 @@ const routes = [
   { path: '/Matiere/liste-matiere', name: 'Liste Matiere', component: ListeMatiere },
   { path: '/Matiere/ajouter-matiere', name: 'Ajouter Matiere', component: AjouterMatiere },
 
+  { path: '/Ajouter Devoir', exact: true,  name: 'Ajouter Devoir', component: AjouterDevoir },
+  { path: '/Ajouter Devoir/Liste Devoirs', name: 'Liste devoirs', component: ListeDevoirs  },
 
+  { path: '/Ajouter Examen', exact: true,  name: 'Ajouter Examen', component: AjouterExamen },
+  { path: '/Ajouter Examen/Liste Examens', name: 'Liste Examens', component: ListeExamens  },
 ];
 
 export default routes;
