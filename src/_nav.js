@@ -46,12 +46,15 @@ export default {
           url: '/profs/liste-profs',
           icon: 'icon-puzzle',
         },
+
         {
           name: 'Ajouter Professeur',
           url: '/profs/ajouter-prof',
           icon: 'icon-puzzle',
         },
-        
+
+
+
       ],
     },
 
@@ -59,7 +62,7 @@ export default {
       name: 'Parents Eleves',
       url: '/parents/liste-parent',
       icon: 'icon-bell',
-     
+
     },
 
     {
@@ -72,15 +75,17 @@ export default {
           url: '/eleves/ajouter-eleve',
           icon: 'icon-cursor',
         },
+
+
         {
           name: 'Liste Eleves',
           url: '/eleves/liste-eleve',
           icon: 'icon-cursor',
         },
-      
+
       ],
     },
-  
+
     {
       name: 'Emploi Du temps',
       url: '/Emploi-temps',
@@ -90,14 +95,14 @@ export default {
           name: 'Ajouter EDT',
           url: '/Emploi-temps/ajouter-Emploi-temps',
           icon: 'icon-star',
-         
+
         },
         {
           name: 'Liste EDT',
           url: '/Emploi-temps/liste-Emploi-temps',
           icon: 'icon-star',
         },
-        
+
       ],
     },
 
@@ -120,33 +125,43 @@ export default {
           url: '/Matiere/ajouter-matiere',
           icon: 'icon-cursor',
         },
+
+        {
+          name: 'Affecter Matières',
+          url: '/Matiere/affecter-matiere',
+          icon: 'icon-cursor',
+        },
+
         {
           name: 'Liste Matières',
           url: '/Matiere/liste-matiere',
           icon: 'icon-cursor',
         },
-      
+
       ],
     },
 
-  {
-      name: 'Registre Absences',
-      url: '/notifications',
-      icon: 'icon-bell',
-     
-    },
+
+
     {
       name: 'Devoirs',
       url: '/Ajouter Devoir/Liste Devoirs',
       icon: 'icon-bell',
-     
+
     },
     {
       name: 'Examens',
       url: '/Ajouter Examen/Liste Examens',
       icon: 'icon-bell',
-     
+
     },
+
+    {
+      name: 'Absence',
+      url: '/RegistreAbsence/registre-absence',
+      icon: 'icon-puzzle',
+    },
+
     {
       name: 'Disabled',
       url: '/dashboard',

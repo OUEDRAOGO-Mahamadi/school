@@ -27,9 +27,7 @@ const CoreUIIcons = React.lazy(() => import('./views/Icons/CoreUIIcons'));
 const Flags = React.lazy(() => import('./views/Icons/Flags'));
 const FontAwesome = React.lazy(() => import('./views/Icons/FontAwesome'));
 const SimpleLineIcons = React.lazy(() => import('./views/Icons/SimpleLineIcons'));
-const Alerts = React.lazy(() => import('./views/Notifications/Alerts'));
-const Badges = React.lazy(() => import('./views/Notifications/Badges'));
-const Modals = React.lazy(() => import('./views/Notifications/Modals'));
+
 const Colors = React.lazy(() => import('./views/Theme/Colors'));
 const Typography = React.lazy(() => import('./views/Theme/Typography'));
 const Widgets = React.lazy(() => import('./views/Widgets/Widgets'));
@@ -47,6 +45,9 @@ const AjouterParent = React.lazy(() => import('./views/Parents/AjouterParent'));
 const Listparent = React.lazy(() => import('./views/Parents/ListParent'));
 
 const AjouterProf = React.lazy(() => import('./views/Professeur/AjouterProf'));
+
+
+
 const ListProf = React.lazy(() => import('./views/Professeur/ListProf'));
 
 const AjouterMatiere = React.lazy(() => import('./views/Matiere/AjouterMatiere'));
@@ -57,7 +58,7 @@ const ListeDevoirs = React.lazy(() => import('./views/Devoirs/ListeDevoirs'));
 
 const AjouterExamen = React.lazy(() => import('./views/Examens/AjouterExamen'));
 const ListeExamens = React.lazy(() => import('./views/Examens/ListeExamens'));
-
+const AffecterMatiereClasse = React.lazy(() => import('./views/Matiere/AffecterMatiereClasse'));
 
 // https://github.com/ReactTraining/react-router/tree/master/packages/react-router-config
 const routes = [
@@ -94,10 +95,8 @@ const routes = [
   { path: '/icons/flags', name: 'Flags', component: Flags },
   { path: '/icons/font-awesome', name: 'Font Awesome', component: FontAwesome },
   { path: '/icons/simple-line-icons', name: 'Simple Line Icons', component: SimpleLineIcons },
-  { path: '/notifications', exact: true, name: 'Notifications', component: Alerts },
-  { path: '/notifications/alerts', name: 'Alerts', component: Alerts },
-  { path: '/notifications/badges', name: 'Badges', component: Badges },
-  { path: '/notifications/modals', name: 'Modals', component: Modals },
+
+
   { path: '/widgets', name: 'Widgets', component: Widgets },
   { path: '/charts', name: 'Charts', component: Charts },
   { path: '/users', exact: true,  name: 'Users', component: Users },
@@ -107,6 +106,8 @@ const routes = [
   { path: '/profs', exact: true,  name: 'Profs', component: ListProf },
   { path: '/profs/liste-profs', name: 'Profs', component: ListProf },
   { path: '/profs/ajouter-prof', name: 'Profs', component: AjouterProf },
+
+
 
   { path: '/parents', exact: true,  name: 'Parents', component: Listparent },
   { path: '/parents/liste-parent', name: 'liste Parents', component: Listparent },
@@ -129,6 +130,8 @@ const routes = [
 
   { path: '/Ajouter Examen', exact: true,  name: 'Ajouter Examen', component: AjouterExamen },
   { path: '/Ajouter Examen/Liste Examens', name: 'Liste Examens', component: ListeExamens  },
+
+  { path: '/Matiere/affecter-matiere', name: 'Affecter Matiere', component: AffecterMatiereClasse },
 ];
 
 export default routes;

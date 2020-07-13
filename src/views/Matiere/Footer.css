@@ -1,0 +1,18 @@
+#main {
+
+  display: flex;
+}
+
+#compte{
+  display: flex;
+
+}
+
+#button {
+
+  margin-left:65%;
+}
+#index{
+
+  border-style: ridge;
+}
